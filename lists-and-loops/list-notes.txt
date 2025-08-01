@@ -1,0 +1,20 @@
+LIST NOTES
+
+- In python you can have 
+    - an empty list 
+    - a list of strings 
+    - a list of numbers 
+    - a list of mixed variables
+    - Even a list of lists 
+
+Syntax for all lists:
+    list_name = []
+
+- 0 indexed (1st item = list[0], 5th item = list[4])
+
+- Add items to the end of a list with the .append method
+    - ex: things = ["thing1", "thing2"]
+    - things.append("thing3");
+    - values in things list = thing1, thing2, thing3
+
+- Delete an item from the list using del list[0] (this would delete first thing in list list)
