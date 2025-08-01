@@ -1,0 +1,9 @@
+To create a virtual environment for whatever directory you are in:
+1 - In the terminal, run "python3 -m venv <venv name>"
+2 - Make sure there is a new directory for the venv with the name you gave it 
+3 - Run source venv/bin/activate to activate the virtual environment (the venv should be in parentheis at the beginning of the command prompt)
+4 - Now you can install the libraries you want (ie: requests) by entering pip3 install requests in the terminal.
+5 - Click view at the top and go to command palette, then search for select interpreter
+6 - Scroll down and click the python version you want with the venv in parentheis
+
+To deactivate the venv type deactivate into the terminal and hit enter
