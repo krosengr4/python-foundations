@@ -1,31 +1,49 @@
 # Using library to import random guess for computer
 import random;
 
-random_num = random.randint(1, 3);
+def play_game(user_choice):
+    random_num = random.randint(1, 3);
 
-if random_num == 1:
-    computer_choice = "R";
-elif random_num == 2:
-    computer_choice = "P";
-else:
-    computer_choice = "S";
+    if random_num == 1:
+        comp_choice = 'R';
+    elif random_num == 2:
+        comp_choice = 'P';
+    elif random_num == 3:
+        comp_choice = 'S';
 
-user_choice = input('Do you want rock paper or scissors? (Type R, P, or S)\n').upper();
+    print('\nUser chose:', user_choice)
+    print('Computer chose:', comp_choice)
 
-if(user_choice == computer_choice):
-    print("TIE! Both chose", user_choice);
-elif user_choice == "R":
-    if computer_choice == "S":
-        print("User wins! Rock > Scissors!");
-    else: 
-        print('Computer wins. Paper > Rock');
-elif user_choice == "P":
-    if computer_choice == "R":
-        print('User Wins! Paper > Rock');
-    else:
-        print('Computer wins. Scissors > Paper');
-elif user_choice == "S":
-    if computer_choice == "P":
-        print("User wins! Scissors > Paper");
-    else:
-        print('Computer wins: Rock over Scissors.');
+    if user_choice == comp_choice:
+        print("TIE! Both chose", user_choice);
+    elif user_choice == "R":
+        if comp_choice == "S":
+            print("User wins!")
+        else: 
+            print('Computer wins')
+    elif user_choice == "P":
+        if comp_choice == "R":
+            print('User Wins!')
+        else:
+            print('Computer wins.');
+    elif user_choice == "S":
+        if comp_choice == "P":
+            print("User wins!")
+        else:
+            print('Computer wins.');
+
+ifContinue = True;
+
+while ifContinue:
+    user_choice = input('\nEnter rock paper or scissors (R, P, or S):\n').upper()
+    play_game(user_choice)
+
+    if_play_again = input('\nWould you like to play again? (y or n):\n')
+    if if_play_again == 'n':
+        print('-------------------------------------------------------')
+        ifContinue = False;
+    elif if_play_again != 'y':
+        print('Invalid response. Shutting down.')
+        ifContinue = False;
+
+        
