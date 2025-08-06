@@ -6,3 +6,6 @@ class Robo_Dog(Robot):
     def make_noise(self):
         print(self.name, 'says: Woof woof!')
 
+    def eat(self):
+        print('I like bacon!')
+
