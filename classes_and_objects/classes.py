@@ -1,0 +1,1 @@
+# Classes are like blueprints to create objects from
