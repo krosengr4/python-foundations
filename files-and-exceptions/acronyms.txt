@@ -5,3 +5,5 @@ OOP - Object oriented programming
 TLA - Three letter acronym
 IDE - integrated development environment
 FIFO - First in first out
+ML - Machine learning
+SMH - Shake my head
