@@ -1,6 +1,6 @@
 def remainder_division(a, b):
     if b == 0:
-        raise ZeroDivisionError
+        raise Exception('Divisor cannot be zero!!')
     
     # Remember // means that it will divide to a whole number
     result = a // b
