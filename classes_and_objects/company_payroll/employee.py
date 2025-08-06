@@ -5,6 +5,6 @@ class Employee:
         self.role = role
         self.salary = salary
 
-    def calculate_weekly_pay(self):
+    def calculate_paycheck(self):
         return self.salary / 52
         

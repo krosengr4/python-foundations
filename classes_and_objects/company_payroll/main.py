@@ -11,3 +11,6 @@ my_company.add_employee(employee1)
 my_company.add_employee(employee2)
 my_company.add_employee(employee3)
 
+my_company.display_employee_names()
+my_company.pay_employees()
+
